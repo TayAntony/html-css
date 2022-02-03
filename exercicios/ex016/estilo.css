@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/*NUNCA ESQUECER DE COLOCAR ; NO FINAL DA UTF-8*/
+
+* { 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background-image: linear-gradient(45deg, #dbc2cf 50%, #9fa2b2 ) ;
+}
+
+main {
+    background-color: white;
+    border-radius: 25px; /* arredonda as bordas da caixa de texto*/
+    box-shadow: 10px 15px 20px #8f7683; /* o primeiro parâmetro é o quanto a sombra vai "andar" para o lado, o segundo é o quanto vai andar pra baixo, o terceiro é o quanto ela vai espalhar, e o último é a cor da sombra*/
+    width: 650px; /* largura da caixa de texto*/
+    padding: 15px; /* oq chamamdos de "acolchoamento", é a distância entre o texto e o limite da caixa de texto*/
+    margin: auto; /* o auto sempre vai centralizar independente do tamanho da tela*/
+}
+
+h1 {
+    color: #592941;
+    text-align: center;
+    text-shadow: 2px 2px 3px #8f2257a9; /* mesmo estilo que a box shadow, mas mais discreta*/
+    ;
+}
+
+h2 {
+    color:#999ac6;
+}
+
+p {
+    text-align: justify;
+    font-size: 25px;
+}

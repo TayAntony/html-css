@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
+</head>
+<body>
+    <h1><strong>Trabalhando com Listas</strong></h1>
+    <hr>
+    <h2>Listas Ordenadas</h2>
+    <p>Para criar um comando que ordena lista se usa a tag OL (ordered lists), seguido da tag LI (de lista).</p>
+    <ol><li> Acordar </li>
+        <li>Lavar louça </li>
+        <li>Ver aulas</li>
+        <li>Treinar adesivos</li>
+        <li>Ler</li>
+        <li>Tempo livre</li> </ol>
+        <!-- usar /li no final se tornou opcional-->
+        <hr>
+    <h2>Tipos de numeração de lista</h2>
+    <p>Para usar diferentes tipos de numeração numa lista se usa o código TYPE dentro da tag OL:
+        <!--Pode-se escolher por qual numeração a lista vai começar (só funciona usando números), usando a tag start=" " e colocando no lugar das aspas por qual número irá começar, para usar na formatação das letras se coloca por qual elemento vai começar, ex: e=5, f=6, g=7-->
+    </p>
+    <ol type="A">
+        <li> Acordar </li>
+        <li>Lavar louça </li>
+        <li>Ver aulas</li>
+        <li>Treinar adesivos</li>
+        <li>Ler</li>
+        <li>Tempo livre</li>
+    </ol>
+
+    <ol type="a">
+        <li> Acordar </li>
+        <li>Lavar louça </li>
+        <li>Ver aulas</li>
+        <li>Treinar adesivos</li>
+        <li>Ler</li>
+        <li>Tempo livre</li>
+    </ol>
+
+    <ol type="I">
+        <li> Acordar </li>
+        <li>Lavar louça </li>
+        <li>Ver aulas</li>
+        <li>Treinar adesivos</li>
+        <li>Ler</li>
+        <li>Tempo livre</li>
+    </ol>
+
+    <ol type="i">
+        <li> Acordar </li>
+        <li>Lavar louça </li>
+        <li>Ver aulas</li>
+        <li>Treinar adesivos</li>
+        <li>Ler</li>
+        <li>Tempo livre</li>
+    </ol>
+<hr>
+<h2>Listas não Ordenadas</h2>
+<p>A tag para listas não ordenadas é UL (unordered lists):</p>
+<ul>
+    <li>Arroz</li>
+    <li>Pão</li>
+    <li>Leite</li>
+</ul>
+<p>E também tem seus próprios tipos, seguindo o mesmo raciocínio, porém com palavras: 
+    <!--DISC, CIRCLE, SQUARE-->
+</p>
+
+<ul type="circle" >
+    <li>Arroz</li>
+    <li>Pão</li>
+    <li>Leite</li>
+</ul>
+
+<ul type="square" >
+    <li>Arroz</li>
+    <li>Pão</li>
+    <li>Leite</li>
+</ul>
+<hr>
+<h1>Listas Mistas</h1>
+ <h2>Linguagens para estudar</h2>
+ <ol>
+    <li>Linguagens Front-End
+        <ol type="a" >
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JQuery</li>
+        </ol>
+    </li>
+    <li>Linguagens Back-End</li>
+        <ol type="a" start="4" >
+            <li>JavaScript</li>
+            <li>C++</li>
+            <li>Python</li>
+            <li>Ruby</li>
+            <li>PHP</li>
+            <li>C#</li>
+        </ol>
+    </ol>
+    <hr>
+    <h2>Meus jogos preferidos:</h2>
+    <ol><li>Computador</li>
+        <ul type="square" >
+            <li>Stardew Valley</li>
+            <li>League of Legends</li>
+            <li>Minecraft</li>
+        </ul>
+        <li>Console</li>
+        <ul type="square" >
+            <li>GTA</li>
+            <ul type="circle" >
+                <li>GTA: San Andreas</li>
+                <li>GTA V</li>
+            </ul>
+            <li>God of War</li>
+            <li>Need For Speed</li>
+        </ul>
+        <li>Celular</li>
+        <ul type="square" >
+            <li>Clash of Clans</li>
+            <li>Last Day on Earth</li>
+            <li>Among Us</li>
+        </ul>
+    </ol>
+    <hr>
+    <h2>Lista de Definições</h2>
+    <p>É como se fosse um dicionário, se coloca o termo e a definição dele através da tag DL <br> (definition list) que tem dentro a tag DT(termo) e DD (descrição)</p>
+    <dl>
+        <dt><abbr title="HyperText Markup Language">HTML</abbr></dt>
+        <dd>Linguagem de marcação para a ciação de um site.</dd>
+        <dt><abbr title="Cascading Styles Sheets">CSS</abbr></dt>
+        <dd>Linguagem de marcação para o design de um site.</dd>
+        <dt><abbr title="JavaScript">JS</abbr></dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+</body>
+</html>

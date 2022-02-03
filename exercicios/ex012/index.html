@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <H1>Inserindo vídeos hospedados localmente</H1>
+    <p>Este vídeo está hospedado no meu próprio servidor, e para inseri-lo basta usar a tag VIDEO (tirando src e colocando SOURCE SRC no lugar), e reduzir o tamanho com o comando WIDTH (não reduz o tamanho do arquivo), seguido do comando CONTROLS (assim como com os áudios), tudo dentro da tag de abertura &lt;VIDEO&gt;.</p>
+    <video width="560" poster="imagens/universe-capa.jpg" controls>
+        <!--E para colocar thubnails se usa o comando POSTER, mas a foto de thumb tem que ser do mesmo tamanho (px) que o vídeo-->
+        <source src="media/meu-video.mp4" type="video/mp4">
+        <source src="media/Meu-Video 720p.webm" type="video/webm">
+    </video>
+    <p> Sinto muito! Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    <!-- evitar hospedagem local de vídeos pesados (por mais que o cliente queira, pq esse tipo de vídeo usando essa tag consomem muito tráfego de dados, o que consequentemente fica mais caro, ainda mais se for em qualidade maior) e nunca coloque a melhor qualidade de vídeo (custa muito caro para o cliente hospedar um vídeo 4k no site)-->
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <p>Inserir vídeos do youtube é uma maneira muito rápida e prática, já que limita o uso de dados no seu site (diminui os gastos), e faz com que, se o cliente também for dono do vídeo, receba os lucros do youtube. E para fazer isso, basta procurar o vídeo, clicar em compartilhar e escolher a opção INCORPORAR, que automaticamente cria a tag necessária para colocar o vídeo no site, em seguida basta copiar a tag no seu programa!</p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7USZXrbaHwQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <p>Dá para fazer o mesmo com o site Vimeo (porém ele pode travar caso a conexão internet não seja boa), e tem muito mais opções de alteração (cor, nem do autor, etc).</p>
+    <iframe src="https://player.vimeo.com/video/48906287?h=0d76671759&loop=1&color=ffffff&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

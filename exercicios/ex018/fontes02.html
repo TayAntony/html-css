@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas (DaFont)</title>
+    <style>
+        @font-face {
+            font-family: 'Love';
+            src: url('fonts/Ready Lover Font by 7Ntypes.otf') format('opentype');/* sempre colocar ' ' dentro dos parênteses, e se for adicionar mais uma url coloque vírgula depois do format() */
+
+            /* TIPOS DE FORMAT()
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-aat (Apple Advanced Typography)
+                - svg
+            */
+        }
+        h1{
+            font-family: 'Love';
+            font-size: 40px;
+        }
+        p{
+            font-family: 'Love';
+            font-size: large;
+            font-weight:500;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eius aliquam, doloribus iste voluptate pariatur voluptatum ad sed ducimus officia repellat consequuntur est sapiente, temporibus magni molestias dolore aperiam hic?</p>
+</body>
+</html>

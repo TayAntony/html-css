@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Treetog-I-Folder-Links.ico" type="image/x-icon">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Os links permitem a ligação de vários pontos dentro da <em>World Wide Web</em>, <br> e por isso é importante saber usá-los, especialmente os <em>hyperlinks</em> que é a <br> interação usada para te levar em outra página. É possível criar um hyperlink <br> usando a tag A (âncora), e colocando o link escolhido dentro das aspas:</p>
+    <p>Não se esqueça de conferir os <a href="https://github.com/gustavoguanabara/html-css/tree/master/exercicios/modulo-01/ex010" target="_blank" rel="extenal">exercícios</a> no GitHub</p>
+    <p>Porém, quando o usuário clicar ele será direcionado para o link novo, <br> sobrepondo/fechando a janela do seu site, para evitar isso se usa o comando <br> TARGET="_BLANK" (abrir uma nova janela em branco) e REL="EXTERNAL", <br> que significa abrir o link (externo) numa aba nova.</p>
+    <!--esses comandos são colocados após o final do link depois das aspas e antes dos colchetes angulares da palavra destacada-->
+    <p><strong>Esta é a primeira página do meu site, se tiver interesse ou dúvidas <br> acesse também a minha <a href="pag002.html" rel="next">segunda página</a>.</strong></p> <!-- rel="next" é usado para indicar que é a próxima página de navegação-->
+    <!--quando se tem um link interno não é preciso indicar a url inteira, só clicar cntr + espaço (a segunda página tem que estar na mesma pasta que o index em que o html está sendo desenvolvido)-->
+    <p>Você também pode ficar ligadão nas <a href="notícias/pag003.html" rel="next">notícias</a> na minha terceira página.</p>
+    <hr>
+    <h2>Outros tipos de links</h2>
+    <p>Além de next, prev e external também existe o link author, que indica que é <br> um link para o site do autor do artigo atual.</p>
+    <hr>
+    <h2>Outros tipos de Target</h2>
+    <p>Além do target blank (que abre uma nova aba), também existe o target self <br> (abre na própria página html), target top (é aberta no frame de maior tamanho, <br> chamado "principal", carregando a página por toda a janela do navegador) e o <br> target parent (que ainda nao tenho certeza, igual o top)</p>
+    <hr>
+    <h1>Links para Download</h1>
+    <p>Existem várias formas de fazer download de arquivos (no site <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external">iana.org</a> tem a lista <br> de todos os formatos de download), porém algum</p>
+    <ul>
+        <li><a href="livro/meulivro.pdf" type="application/pdf" target="_blank">Baixar o livro em PDF</a></li> <!-- o # significa que é um link vazio a princípio-->
+        <li><a href="livro/meulivro.zip" type="application/zip" target="_blank">Livro compactado em ZIP</a></li>
+    </ul>
+    <!--dependendo do tipo de navegador o livro em pdf vai abrir o arquivo pro cliente baixar manualmente (pela setinha no canto superior ou clicando com o botão direito do mouse em cima do lugar do hyperlink e selecionando "SALVAR LINK COMO"), diferente do arquivo zip que já baixa só de clicar no hyperlink-->
+</body>
+</html>

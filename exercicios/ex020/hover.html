@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo do Hover</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        div > p { /* > p significa que todos os parágrafos que estiverem dentro de divs são filhos dessa div, apenas o > siginifica "filho"*/
+            display: none; /*os parágrafos que estiverem dentro da div não serão revelados ao utilizar esse comando*/
+            width: 200px;
+        }
+
+        div:hover > p { /*isso junta uma div com a pseudoclasse hover e faz com que se tenha interação com o texto, fazendo o texto escondido aparecer abaixo*/
+                display:block; /* oposto do none, faz com que o texto seja revelado*/
+                color: white;
+                background-color: darkcyan;
+        }
+
+        div:hover {
+            color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>Passe o mouse aqui
+        <p>TEXTO ESCONDIDO!</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias de HTML5</title>
+</head>
+<body>
+    <H1>Imagem Dinâmica</H1>
+    <p>Diferentes dispositivos têm diferentes tamanhos de tela, e consequentemente a imagem do seu site precisa ser adaptada para esses tipos de tela, nesse exercício vamos aprender a usar a tag PICTURE, que junto com a tag <strong>SOURCE MEDIA TYPE</strong> delimita os tamanhos de imagens a serem carregadas para que não exista barra de rolagem lateral.</p>
+    <!--Quando um usuário entra e sai muito rápido do seu site, o Google entende que as infrormações apresentadas não foram úteis, ou não agradaram o usuário, a taxa de desistência do seu site aumenta e o googlepara de recomendar ele, por isso é muito importante sempre entender a visão do usuário e saber o melhor para ele-->
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+<!--é interessante se trabalhar com o tamanho máximo da imagem (max-width), nesse caso como a imagem g foi salva com 1000px é esse o tamanho que colocamos (+50px da barra de rolagem que costuma aparecer conforme aumentamos e diminuimos a janela), e dentro do srcset o cntr+espaço nao funciona, então tem que digitar manualmente a fonte da imagem-->
+<!--NÃO ESQUECER DE COLOCAR O FORMATO DA IMAGEM NO TYPE="IMAGE/"-->
+<!--A ordem de colocação das fotos é sempre da menor para a maior de cima para baixo, sendo a imagem G a 'padrão' do seu site, já que ela foi a única a nao utilizar source media type-->
+<p>
+    De maneira geral, o MAX-WIDTH delimita o tamanho máximo quea página terá para aparecer a imagem, por exemplo: se o tamanho máximo é 750px a imagem que vai carregar é a média, mas a partir do momento que for menor que 750px será a imagem pequena
+</p>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Agora vamos reproduzir um áudio em HTML5 usando a tag AUDIO:</p>
+    <audio src="media/Blind Memories - Cheel.mp3" controls></audio>
+    <!--é possível colocar apenas o comando autoplay para a música tocar assim que o site for aberto ou atualizado, e também é possível criar um botão de display por meio do comando controls, mas qualquer tipo de atualização no código vai fazer a música começar a tocar com o autoplay-->
+    <!--TIPOS DE FORMATOS QUE TEM COMPATIBILIDADE COM TODOS OS NAVEGADORES MP3, WAV, OGG-->
+    <p>Existem também outras maneiras de colocar o áudio, caso o formato que você esteja usando nao funcione no seu navegador, para isso usa-se a tag SOURCE SRC dentro da tag AUDIO (retirar o src da tag):</p>
+<audio preload="metadata">
+<source src="media/Blind Memories - Cheel.mp3" type="audio/mpeg">
+<source src="media/Blind Memories - Cheel.ogg" type="audio/ogg">
+<source src="media/Blind Memories - Cheel.wav" type="audio/wav">
+</audio>
+<p>Caso nenhum formato seja compatível será exibida a seguinte informação: <br> <strong>Infelizmente não foi possível reproduzir o áudio no seu navegador.</strong></p> 
+    <a href="https://studio.youtube.com/channel/UCDa66Hjudf_MnZNh6K3ZWtQ/music" target="_blank"> &#x1F449 Baixe o áudio aqui!</a>
+<!--quando se colocar outros formatos de reprodução do áudio sempre coloque na ordem mp3, ogg e wav, e use preload="metadata" para carregar apenas as informações básicas do arquivo, mas demora mais quando se der o play pois começará a carregar o download-->
+<p>Também existe o comando LOOP que faz a música recomeçar.</p>
+</body>
+</html>

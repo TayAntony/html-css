@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudando iframe</title>
+    <style>
+        iframe{
+            width: 400px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>testando iframes</h1>
+    <!--Tamanho padrão de um iframe: 300px - 150px
+    mas é possível alterar colocando height e width dentro da tag ou por css(lembrando que o estilo predominante é o de css, não o por tag)-->
+    <p>Olha o site do <iframe src="https://www.cursoemvideo.com" frameborder="0">Curso em Video</iframe>em um iframe <!--exemplo de iframe inline e sem borda (frameborder só recebe os parâmetros 1 true e 0 false, independendte do valor dentro dele a borda terá a mesma espessura, mas pode ser estilizada no css)--></p>
+
+    <p>O site do <iframe src="https://www.google.com.br" frameborder="0" scrolling="auto"> <a href="https://www.google.com.br"></a> GOOGLE</iframe> também é muito legal</p> 
+    <!--O SCROLLING funciona atraves das funcionalidades auto(terá barra de rolagem quando o conteúdo exceder o tamanho do iframe), yes (aparecerá barra de rolagem mesmo que todo o conteúdo caiba no iframe) e no(não aparecá barra de rolagem que permita a rolagem), mas varia de navegador para navegador, alguns parâmetros podem não funcionar-->
+
+
+    <!--é possível colocar um link fora do iframe para quando o navegador for incompatível com um iframe aparecer o link para o site escolhido, além de uma frase complementar entre as tags do iframe-->
+
+    <!--Alguns sites tem proteção para que seu conteúdo nao seja acessado por iframes de terceiros-->
+</body>
+</html>

@@ -1,2 +1,2 @@
-# html-css
-Exercícios do curso de HTML  e  CSS
+Link para acessar os exercícios -> <br>
+Link para acessar os desafios ->
